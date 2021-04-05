@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Clinina Medica ABC</string>
+    <string name="textInfo">From</string>
+    <string name="textUser">Guilherme Spica Luiz</string>
+    <string name="checkIn">Realizar Consulta</string>
+    <string name="schedules">Meus Agendamentos</string>
+    <string name="request">Nova Consulta</string>
+    <string name="specialties">Especialidades</string>
+    <string name="textName">Digite seu nome</string>
+    <string name="textAge">Digite sua idade</string>
+    <string name="textDate">Data de nascimento</string>
+    <string name="textHour">Digite o horário</string>
+    <string name="textDay">Digite o dia</string>
+    <string name="radioBtnSpecialtyOne">Clínico geral</string>
+    <string name="radioBtnSpecialtyTwo">Ortopedista</string>
+    <string name="radioBtnSpecialtyThree">Oftalmologista</string>
+    <string name="btnSend">Enviar</string>
+</resources>
