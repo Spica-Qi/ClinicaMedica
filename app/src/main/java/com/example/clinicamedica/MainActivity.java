@@ -1,7 +1,9 @@
 package com.example.clinicamedica;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        requestPermission();
+
         btnRequest = findViewById(R.id.btnRequest);
 
         btnRequest.setOnClickListener(new View.OnClickListener() {
@@ -27,4 +31,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void requestPermission() {
+        int CODE_PERMISSION = 1000;
+        ActivityCompat.requestPermissions(
+                this,
+                new String[] {
+                        Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.READ_EXTERNAL_STORAGE
+                },CODE_PERMISSION
+        );
+    }
+
+
 }
